@@ -1,19 +1,20 @@
 import React from 'react';
 import Navbar from './components/Navbar'
-import MainContainer from './containers/MainContainer'
+import About from './components/About'
+import Experience from './components/Experience'
+import Tech from './components/Tech'
 import Footer from './components/Footer'
-import { BrowserRouter as Router } from 'react-router-dom'
 import './App.css';
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Navbar />
-        <MainContainer />
-        <Footer />
-      </div>
-    </Router>
+    <div className="App">
+      <Navbar />
+      <About />
+      <Experience />
+      <Tech />
+      <Footer />
+    </div>
   )
 }
 

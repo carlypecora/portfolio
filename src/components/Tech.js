@@ -1,27 +1,73 @@
 import React from 'react'
 
-class Tech extends React.Component {
+const skillCategories = [
+  {
+    category: 'Blockchain & Cryptography',
+    skills: [
+      'Bitcoin (Taproot, PSBT, BIP32/39/84)',
+      'BLS12-381',
+      'Nova/Spartan SNARKs',
+      'Poseidon Hashing',
+      'Merkle Trees',
+      'Reed-Solomon Erasure Coding',
+      'Pallas/Vesta Curves',
+    ],
+  },
+  {
+    category: 'Systems & Languages',
+    skills: [
+      'Rust',
+      'Dart / Flutter',
+      'TypeScript',
+      'Python',
+      'SQL',
+      'Java',
+      'Node.js',
+    ],
+  },
+  {
+    category: 'Infrastructure & Runtime',
+    skills: [
+      'Wasmtime / WebAssembly',
+      'Tokio',
+      'Axum',
+      'Docker',
+      'AWS / Azure / GCP',
+      'Terraform',
+      'CI/CD',
+    ],
+  },
+  {
+    category: 'Security',
+    skills: [
+      'Fuzz Testing (libfuzzer)',
+      'Formal Verification (Picus / Lean)',
+      'Cryptographic Auditing',
+      'Threat Modeling',
+    ],
+  },
+]
 
-
-
-  render(){
-    return(
-      <div id="tech">
-        <div className="tech-div">
+const Tech = () => {
+  return (
+    <section id="tech">
+      <div className="tech-content">
         <h2>Skills</h2>
-        <p className="skills"><i className="devicon-javascript-plain"></i>Javascript</p>
-        <p className="skills"><i className="devicon-react-original"></i>React/ReactNative/Redux</p>
-        <p className="skills"><i className="devicon-nodejs-plain"></i>Node.js</p>
-        <p className="skills"><i className="devicon-ruby-plain"></i>Ruby</p>
-        <p className="skills"><i className="devicon-rails-plain"></i>Rails</p>
-        <p className="skills"><i className="devicon-python-plain"></i>Python</p>
-        <p className="skills"><i className="devicon-django-plain"></i>Django</p>
-        <p className="skills"><i className="devicon-css3-plain"></i>CSS3</p>
-        <p className="skills"><i className="devicon-html5-plain"></i>HTML5</p>
-        <p className="skills"></p>
+        <div className="skills-grid">
+          {skillCategories.map((cat, i) => (
+            <div key={i} className="skill-category">
+              <h3>{cat.category}</h3>
+              <div className="skill-list">
+                {cat.skills.map((skill, j) => (
+                  <span key={j} className="skill-pill">{skill}</span>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-    )
-  }
+    </section>
+  )
 }
+
 export default Tech

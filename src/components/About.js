@@ -1,18 +1,17 @@
 import React from 'react'
 
 const About = () => {
-	return (
-		<div id="about">
-		<div className="about-div">
-			<div className="about-txt">
-				<h2 className="about-title">Hi there!</h2>
-				<p className="about-p">
-					I'm Carly! I am an energetic, motivated Software Engineer currently working as a Fullstack Developer in Boston, Massachusetts. Previously I lived in New York City, working both in the restaurant industry and in performing arts, until attending the Flatiron School in Downtown New York.
-				</p>
-			</div>
-		</div>
-		</div>
-	)
+  return (
+    <section id="about">
+      <div className="about-content">
+        <h1>Carly Pecora</h1>
+        <h2 className="about-title">Protocol & Security Engineer</h2>
+        <p className="about-p">
+          Building Bitcoin-native infrastructure at Unspendable Labs. I design and implement core systems for the Kontor Protocol — from Taproot transaction encoding and WASM smart contract execution to BLS signature aggregation and recursive SNARK verification.
+        </p>
+      </div>
+    </section>
+  )
 }
 
 export default About

@@ -16,10 +16,9 @@ export default class Contact extends React.Component {
     okText: "Back",
     content: (
       <div>
-        <a href="mailto:carlyannpecora@gmail.com" className="cl"><MailOutlined className='.contact-links'/>&nbsp;&nbsp;&nbsp;&nbsp; <p className="contact-link-name">carlypecora@protonmail.com</p></a>
-        <a href="https://github.com/carlypecora" target="blank" className="cl"><GithubOutlined className='.contact-links'/>&nbsp;&nbsp;&nbsp;&nbsp; <p className="contact-link-name">@carlypecora</p></a>
+        <a href="mailto:carlypecora@protonmail.com" className="cl"><MailOutlined className='.contact-links'/>&nbsp;&nbsp;&nbsp;&nbsp; <p className="contact-link-name">carlypecora@protonmail.com</p></a>
+        <a href="https://github.com/dime-squanderer" target="blank" className="cl"><GithubOutlined className='.contact-links'/>&nbsp;&nbsp;&nbsp;&nbsp; <p className="contact-link-name">@dime-squanderer</p></a>
         <a href="https://www.linkedin.com/in/carly-pecora-72454a189/" target="blank" className="cl"><LinkedinOutlined className='.contact-links'/>&nbsp;&nbsp;&nbsp;&nbsp; <p className="contact-link-name">Carly Pecora</p></a>
-        <a href="https://www.instagram.com/pecoracarly/" target="blank" className="cl"><InstagramOutlined className='.contact-links'/>&nbsp;&nbsp;&nbsp;&nbsp; <p className="contact-link-name">@pecoracarly</p></a>
       </div>
     ),
     onOk() {},
