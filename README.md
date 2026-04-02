@@ -1,10 +1,10 @@
 # carlypecora.com
 
-Personal portfolio site. Built with React 18 and deployed on Netlify.
+Personal portfolio site. Built with React 18, Vite, and deployed on Netlify.
 
 ## Prerequisites
 
-- Node.js >= 18
+- Node.js >= 22
 - Yarn
 
 ## Setup
@@ -27,4 +27,4 @@ Opens at [http://localhost:3000](http://localhost:3000). Hot-reloads on save.
 yarn build
 ```
 
-Output goes to `build/`. Deployed automatically via Netlify.
+Output goes to `dist/`. Deployed automatically via Netlify.
